@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="{{ app()->getLocale() }}">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Backstage</title>
+
+        <link rel="stylesheet" href="app.css">
+        <script src="https://use.fontawesome.com/b5ab651074.js"></script>
+    </head>
+    <body class="font-sans antialiased bg-grey-darker text-white pt-32">
+        <header class="bg-grey-darkest border-t-8 border-blue mb-4 shadow-lg fixed pin-t w-screen">
+            <div class="container mx-auto border-b border-grey-darker">
+                <nav class="px-4 sm:px-0 flex items-center justify-between flex-wrap">
+                    <div class="flex items-center flex-no-shrink text-white mr-6">
+                        <h1 class="font-normal text-3xl flex-no-shrink w-1/4 py-2">
+                            Backstage
+                        </h1>
+                    </div>
+                    <div class="block sm:hidden">
+                        <div class="py-2 px-2 border-b-3 border-grey-darkest">
+                            <button class="flex items-center px-3 py-2 border text-white border-white hover:text-blue hover:border-blue">
+                                <i class="fa fa-bars fa-sm"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="w-full hidden sm:block flex-grow sm:flex sm:items-center sm:w-auto">
+                        <div class="w-full block flex-grow sm:flex sm:items-center sm:w-auto">
+                            <div class="sm:flex-grow">
+                                <a href="#" class="block sm:inline-block py-4 px-4 text-grey border-b border-grey-dark sm:border-b-2 sm:border-grey-darkest hover:text-white hover:bg-grey-darker hover:border-blue-dark">
+                                    Home
+                                </a>
+                                <a href="#" class="block sm:inline-block py-4 px-4 border-b-2 border-blue hover:bg-grey-darker hover:border-blue-dark">
+                                    Shows
+                                </a>
+                            </div>
+                            <div>
+                                <div class="block sm:inline-block py-4 px-4 cursor-pointer border-b-2 border-grey-darkest hover:border-blue-dark hover:bg-grey-darker relative flex justify-between dropdown">
+                                    Test User
+                                    &nbsp;<i class="fa fa-chevron-down fa-sm text-blue"></i>
+                                    <div class="hidden absolute w-full pin-l sm:pin-r mt-8 sm:mt-4 z-30 bg-grey-dark border-t-2 border-blue-dark dropdown-content">
+                                        <div class="border-b border-grey">
+                                            <div class="font-bold px-4 py-2 cursor-auto">
+                                                Settings
+                                            </div>
+                                            <a href="#" class="block px-4 py-2 hover:bg-grey-darker">
+                                                <i class="fa fa-cog fa-sm"></i>&nbsp;
+                                                Your Settings
+                                            </a>
+                                        </div>
+                                        <div class="border-b border-grey">
+                                            <div class="font-bold px-4 py-2 cursor-auto">
+                                                Crew
+                                            </div>
+                                            <a href="#" class="block px-4 py-2 hover:bg-grey-darker">
+                                                <i class="fa fa-check fa-sm text-green"></i>&nbsp;
+                                                Test Crew 1
+                                            </a>
+                                            <a href="#" class="block px-4 py-2 hover:bg-grey-darker">
+                                                Test Crew 2
+                                            </a>
+                                        </div>
+                                        <div class="">
+                                            <a href="#" class="block px-4 py-2 hover:bg-grey-darker">
+                                                <i class="fa fa-sign-out fa-sm"></i>&nbsp;
+                                                Log Out
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div class="container mx-auto">
+                <div class="px-4 sm:px-0">
+                    <div class="flex justify-between items-center py-2">
+                        <h2 class="font-normal text-2xl">Shows</h2>
+                        <div>
+                            <button class="bg-blue hover:bg-blue-dark text-white font-semibold py-2 px-4 shadow">
+                                <i class="fa fa-plus fa-sm"></i>&nbsp;
+                                Add Show
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="container mx-auto">
+            <div class="flex -mx-4">
+                <div class="px-4 w-full">
+                    <div class="bg-grey-darkest shadow-lg">
+                        <div class="p-4 border-b border-grey-dark flex justify-between items-center">
+                            <a href="#" class="font-normal text-xl">Test Show 1</a>
+                            <div class="bg-grey-dark hover:bg-grey-darker text-white font-semibold py-2 px-2 shadow cursor-pointer relative inline-block dropdown">
+                                <i class="fa fa-ellipsis-h fa-sm"></i>
+                                <div class="hidden absolute pin-r mt-2 z-30 bg-grey-dark dropdown-content">
+                                    <a href="#" class="block px-4 py-2 font-normal hover:bg-grey">
+                                        <i class="fa fa-edit fa-sm"></i>&nbsp;
+                                        Edit
+                                    </a>
+                                    <a href="#" class="block px-4 py-2 font-normal hover:bg-grey">
+                                        <i class="fa fa-times fa-sm"></i>&nbsp;
+                                        Delete
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-4 flex justify-between items-center">
+                            <a href="#" class="font-normal text-xl">Test Show 2</a>
+                            <div class="bg-grey-dark hover:bg-grey-darker text-white font-semibold py-2 px-2 shadow cursor-pointer relative inline-block dropdown">
+                                <i class="fa fa-ellipsis-h fa-sm"></i>
+                                <div class="hidden absolute pin-r mt-2 z-30 bg-grey-dark dropdown-content">
+                                    <a href="#" class="block px-4 py-2 font-normal hover:bg-grey">
+                                        <i class="fa fa-edit fa-sm"></i>&nbsp;
+                                        Edit
+                                    </a>
+                                    <a href="#" class="block px-4 py-2 font-normal hover:bg-grey">
+                                        <i class="fa fa-times fa-sm"></i>&nbsp;
+                                        Delete
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
